@@ -1,0 +1,157 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  min-height: 100vh;
+  background: linear-gradient(rgba(7, 52, 97, 0.802), rgba(4,9,30,0.7)), url(hotel-presidente-4s.jpg);
+  background-size: cover;
+  margin-bottom: 40px;
+  position: relative;
+
+}
+
+.header-sub{
+  width: 60%;
+  position: absolute;
+  transform: translate(-50%,-50);
+  top: 35%;
+  left: 10%;
+  color: white;
+}
+
+.header-sub h1{
+  font-size: 60px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+
+}
+
+.header-sub p{
+  color: white;
+  font-size:20px;
+  margin-left: 2px;
+  font-weight: 500em;
+  
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 6%;
+  align-items: center;
+}
+nav img{
+  width: 380px;
+  margin-left: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li{
+  list-style: none;
+  color: white;
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  
+ }
+
+.nav-links a{
+  color:white;
+}
+
+.nav-links ul li::after{
+  content: '';
+  height: 2px;
+  display: block;
+  width: 0%;
+  background: #fbf9f9;
+  margin: auto;
+  transition: 0.5s;
+
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+.list{
+  margin-left: 50px;
+  line-height: 1.5rem;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+  /*---------- complaint */
+.container-complaint{
+  position: relative;
+  margin-bottom: 150vh;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 2vw 4vw;
+  /* max-width: 60px; */
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background: linear-gradient(rgb(64, 184, 224), rgb(82, 82, 255));
+  position: absolute;
+  left: 10%;
+}
+
+form h3{
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+form input, form textarea{
+  margin: 5px 0;
+  outline-style:double;
+  outline-color: #f5f5f5;
+  padding: 8px;
+  background: #f5f5f5;
+}
+
+form button{
+  background: rgb(101, 224, 214);
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 30px;
+  width: 150px;
+  color: white;
+  border: 0px solid white;
+  margin: 20px auto 20px;
+  
+}
+form button:hover{
+  background: #185353;
+  cursor: pointer;
+  transition: 1s;
+  border: 1px solid #a34742;  
+  font-size: large;
+}
+
+.image{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 4vw 4vw;
+  /* max-width: 60px; */ 
+  position: absolute;
+  left: 50%;
+}  
+
+/* footer{
+  background: rgb(64, 184, 224);
+} */
+

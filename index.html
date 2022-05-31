@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Complaint Form</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="ug.jpg">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <a href=""><img src="univer2.png" alt=""></a>
+        <div class="nav-links">
+          <ul>
+            <li title="For support in sending your complaints">CONTACT</li>
+           <li><a href="tel:0548187276">TELEPHONE</a></li>
+            <li><a href="mailto:mkcorletey@st.ug.edu.gh">EMAIL</a></li>
+              
+          </ul>
+        </div>
+    </nav>
+
+      <div class="header-sub">
+        <h1 class="info">Welcome to the Student Support System</h1>
+        <p>This portal is made available specifically to lodge any complaint <br> 
+        being faced by the student in either in the Ug Hotels <br>off-campus or Halls on-campus <br></p><br>
+        <p><b>Note the following requirements</b></p>
+        <div class="list">
+          <ul>
+            <li>Must be a Student of the institution</li>
+            <li>Must be a resident in any of the Halls or Hotels</li>
+            <li>Student should be able to read and write</li>
+            <li>Student should not be perching</li>
+          </ul>
+        </div>
+
+
+      </div>
+    </section>
+      
+    <!---------------- complaint section -->
+    <section class="container-complaint">
+      <div><img class="image" src="visual.png"  alt=""></div>
+      <form method="post" > 
+        <h3>Fill the forms to lodge your complaint</h3>
+        <label for="Name">Name</label>
+        <input type="text" id="name" placeholder="Name"><br>
+
+        <label for="Index Number">Index Number</label>
+        <input type="text" id="indexnumber" placeholder="Index Number"><br>
+
+        <label for="Email">Email</label>
+        <input type="text" id="email" placeholder="Email"><br>
+
+        <label for="hall" >Hall of Residence</label>
+        <select name="hall" id="hall">
+        <option value="Commonwealth">Commonwealth</option>
+        <option value="Legon">Legon Hall</option>
+        <option value="Sarbah">Mensah Sarbah Hall</option>
+        <option value="Akuafo">Akuafo Hall</option>
+        <option value="Volta">Volta Hall</option>
+        <option value="Diaspora">Diaspora</option>
+        <option value="Pent">Ghana Hostels Limited</option>
+      </select><br>
+
+      <label for="Room Number">Room Number</label>
+      <input type="text" id="rm" placeholder="Enter your Room Number"><br>
+
+      <label for="cc">Lodge your Complaint</label>
+      <textarea id="message" type="text-area" placeholder="What's your problem" rows="10" cols="30px"></textarea><br>
+          <button id="btn" type="submit">Send</button>
+   </form>   
+ </section>
+
+<div id="footer">
+  <p style="text-align: center; margin-bottom: 20px;" color="gold">Made by &lt;Group 404/&gt;</p>
+</div>
+ 
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script> 
+  </body>
+</html>
